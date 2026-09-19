@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTF | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="home-page">
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Robo-Tech Forum, GCOEA
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#recruitment">Recruitment</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- home page-->
+
+    <section id="home" class="home-section">
+
+        <div class="home-content">
+
+            <p>THE ROBO-TECH FORUM • GCOEA</p>
+
+            <h1> Welcome, <span id="user"></span></h1>
+
+            <p>Explore robotics, technology and innovation with
+                the Robo Tech Forum.</p>
+            
+        
+        </div>
+
+    </section>
+
+
+    <script>
+        const username = localStorage.getItem("rtfUsername");
+
+        // Check if the user is logged in
+        if (!username) {
+            window.location.href = "index.html";
+        }
+
+        document.getElementById("user").textContent = username;
+    </script>
+
+</body>
+</html>

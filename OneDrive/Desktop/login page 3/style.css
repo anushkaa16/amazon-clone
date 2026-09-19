@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+/* Login/Signup Page */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("back\ img.jpeg");
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat; 
+    padding: 20px;
+}
+
+.auth-box {
+    width: 400px;
+    padding: 35px;
+    background: #02040f;
+    border: 1px solid #f5f5dc;
+    border-radius: 30px;
+    box-shadow:
+    0 0 20px rgba(107, 122, 60, 0.5),
+    0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.auth-box h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaa;
+    margin: 8px 0 30px;
+    font-size: 13px;
+}
+
+.form-title h2 {
+    margin-bottom: 5px;
+    text-align: center;
+    color:#a7d8f0;
+}
+
+.form-title p {
+    color: #999;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align:center;
+}
+
+.input-box {
+    margin-bottom: 17px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #394b60;
+    border-radius: 7px;
+    background: #111d2d;
+    color: white;
+    outline: none;
+}
+
+.input-box input:focus {
+    border-color: #32aaff;
+}
+
+.input-box small {
+    color: #ff6b6b;
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #1688d8;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background: #0876c2;
+}
+
+.switch-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+.switch-text button {
+    background: none;
+    border: none;
+    color: #4db8ff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Home page */
+
+.home-page {
+    background: #07111f;
+    min-height: 100vh;
+}
+
+.navbar {
+    height: 70px;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #091827;
+    border-bottom: 1px solid #1d3c56;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    color: #4db8ff;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #4db8ff;
+}
+
+section {
+    min-height: 80vh;
+    padding: 80px 8%;
+}
+
+.home-section {
+    display: flex;
+    align-items: center;
+    min-height:calc(90vh );
+    background-image:url("back\ img.jpeg");
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat; 
+    padding: 80px;
+    box-sizing:border-box;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.home-content h1 span {
+    color: #4db8ff;
+}
+
+.home-content p {
+    color: #bbb;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+.section-title {
+    color: #4db8ff;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    background: #0d1d2d;
+    border: 1px solid #1e405b;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #4db8ff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+
+    .auth-box {
+        width: 100%;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home-content h1 {
+        font-size: 35px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
